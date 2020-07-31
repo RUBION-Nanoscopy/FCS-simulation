@@ -132,12 +132,6 @@ function [x,y,z] = simulateDiffusion3D_2(scan, D, n, Dt, varargin)
                 end
             end
             
-            % Das hier ist fies zusammen gegoogelt:
-            % http://www.matheplanet.com/default3.html?call=viewtopic.php?topic=86998
-            % Rolf Würtz hat es vorher aber genau so gesagt...
-            
-            % Die x- und y-Werte so verschoben, dass ads Sticky im
-            % Nullpunkt liegt:
             if ~is_sticky && lcase == 0
                 X0 = x(i) - st_x;
                 X1 = x(i+1) - st_x;
